@@ -694,7 +694,7 @@ function RunSteps($steps) {
 
 # Main Script Code
 if ($Run -eq $False) {
-    Write-Host "Place Holder Text For The Discription Of This Program."
+    Write-Host "This Script will assist in the setup of a graphics or IWS computer."
     exit
 }
 
@@ -706,7 +706,7 @@ if ($setupType.ToUpper() -eq "G") {
         SetEnvironmentVariables = $false
         SetNetAdapters = $false
         InstallNvidiaDrivers = $false
-        Debloat -Sysprep -Debloat -Privacy = $false
+        Debloat = $false
         RemoveDesktopIcons = $false
     }
     RunSteps($steps)
@@ -717,7 +717,7 @@ if ($setupType.ToUpper() -eq "G") {
         SetEnvironmentVariables = $false
         SetNetAdapters = $false
         InstallNvidiaDrivers = $false
-        Debloat -Sysprep -Debloat -Privacy = $false
+        Debloat = $false
         RemoveDesktopIcons = $false
     }
     RunSteps($steps)
